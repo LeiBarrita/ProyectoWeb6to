@@ -45,34 +45,30 @@ input[type="search"]{
 	height: 40px;*/
 }
 .head-bar-title{
-	//background-color: grey;
+	//background-color: white;
 	display: flex;
 	width: auto;
 	height: 100%;
-	margin-left: 2%;
+	margin-left: 1%;
+	margin-right: auto;
 	align-items: center;
-	//align-self: center;
-	//text-align: center;
 }
 .head-bar-serch{
-	background-color: blue;
+	//background-color: blue;
 	display: flex;
 	width: auto;
 	height: 100%;
-	//align-self: center;
-	margin-left: auto;
-	margin-right: 0;
+	margin-right: 2%;
 }
 .head-bar-profile{
-	background-color: grey;
+	//background-color: grey;
 	display: flex;
-	width: 200px;
+	width: 150px;
 	height: 100%;
-	margin-left: auto;
-	margin-right: 0;
+	//margin-left: auto;
+	//margin-right: 0;
 }
-.icon{
-	//position: absolute;
+.head-icon{
 	display: flex;
 	align-self: center;
 	width: auto;
@@ -94,6 +90,14 @@ input[type="search"]{
 	position: fixed;
 	width: 40px;
 	height: 100%;*/
+}
+.side-icon{
+	display: flex;
+	align-self: center;
+	width: 80%;
+	height: auto;
+	//left: 1800px;
+	//top: 8px;
 }
 
 .page-content{
