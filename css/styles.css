@@ -65,8 +65,6 @@ input[type="search"]{
 	display: flex;
 	width: 150px;
 	height: 100%;
-	//margin-left: auto;
-	//margin-right: 0;
 }
 .head-icon{
 	display: flex;
@@ -77,6 +75,17 @@ input[type="search"]{
 	top: 8px;
 }
 
+.page-content{
+	background-color: #1BE7FF80;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	left: 80px;
+	top: 60px;
+}
 
 .side-bar{
 	position: absolute;
@@ -98,10 +107,6 @@ input[type="search"]{
 	height: auto;
 	//left: 1800px;
 	//top: 8px;
-}
-
-.page-content{
-
 }
 
 .formul{
