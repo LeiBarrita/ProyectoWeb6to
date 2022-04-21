@@ -30,10 +30,7 @@
 	margin: 0;
 	padding: 0;
 }
-/*fieldset{
-	padding: 0;
-	border: none;
-}*/
+
 input[type="search"]{
 	//background-color: rgba(0, 0, 0, 0);
 	display: inline-block;
@@ -171,9 +168,10 @@ input[type="search"]{
 	height: 25%;
 	margin-top: 30%;
 }
-/*.side-icon{
-	height: var(--icon-size);
-}*/
+.fit-icon{
+	width: 100%;
+	height: 100%;
+}
 
 .formul{
 	background-color: violet;
