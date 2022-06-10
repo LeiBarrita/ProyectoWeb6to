@@ -7,18 +7,18 @@
 	<title>Crear Lista</title>
 </head>
 <body>
-    <form action="conexion.php" method="post">
+    <form action="crearlistaP.php" method="get">
 	<div class="login-box">	
 		<h1>Lista</h1>
         
 
-        <form method="post">
+        <!--form method="post"-->
 			<label for="nombreLista">Nombre de la Lista:</label>
 			<input type="text" name="nombreLista">
 			<label for="infoLista">Descripcion</label>
 			<input type="text" name="infoLista">
 			<input type="submit">
-		</form>
+		<!--/form-->
 	</div>	
     </form>
 </body>
