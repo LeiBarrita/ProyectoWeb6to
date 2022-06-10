@@ -64,10 +64,20 @@
 						<h2><a href="crearmiembro.php">Integrante</a></h2>
 					</div>
 				</div>
+
 				<div class="even-box join-box">
 					<h2>Unirse</h2>
-					<div class="placeholder-box"></div>
+					<div class="placeholder-box">
+					<form action="unirseequipoP.php" method="get">
+						<h2>Nombre del equipo:</h2><br>
+						<input type="text" name="nombreEquipo"><br>
+						<h2>Nombres del integrante:</h2><br>
+						<input type="text" name="nombres"><br>
+						<input type="submit" value="Unirse" class="delete-btn">
+					</form>
+					</div>
 				</div>
+
 			</div>
 			<div class="content-row">
 				<div class="triple-box templates-box">
@@ -76,7 +86,13 @@
 				</div>
 				<div class="even-box help-box">
 					<h2>Acerca</h2>
-					<div class="placeholder-box"></div>
+					<div class="placeholder-box">
+						<h3>Creador:</h3>
+						<h4>Barrita Licea Pedro Uziel</h4>
+						<br>
+						<h3>Materia:</h3>
+						<h4>Programacion Web</h4>
+					</div>
 				</div>
 			</div>
 		</div>
