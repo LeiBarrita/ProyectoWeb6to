@@ -61,7 +61,7 @@
 					<div class="placeholder-box">
 						<h2><a href="crearlista.php">Lista</a></h2>
 						<h2><a href="crearequipo.php">Equipo</a></h2>
-						<h2><a href="crearintegrante.php">Integrante</a></h2>
+						<h2><a href="crearmiembro.php">Integrante</a></h2>
 					</div>
 				</div>
 				<div class="even-box join-box">
