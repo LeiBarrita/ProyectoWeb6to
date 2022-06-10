@@ -5,14 +5,14 @@
 		die("Error al conectar a la base de datos");
 	}
 
-	$sql = "SELECT nombreLista, infoLista FROM listas ORDER BY nombreLista";
+	$sql = "SELECT nota FROM notas ORDER BY nota";
 	$result = mysqli_query($conn, $sql);
-	$listas = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	$notas = mysqli_fetch_all($result, MYSQLI_ASSOC);
 	mysqli_free_result($result);
 	mysqli_close($conn);
 ?>
 
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -65,39 +65,19 @@
 			</div>
 		</div>
 		<div class="page-content">
-			<div class="wrap-box">
 
-				<div class="queque-box">
-				<form action="abrirlista.php" method="get">
-					<h2>Abrir Lista</h2>
-					<div class="placeholder-box eliminar">
-						<input type="text" name="nombreLista"><br>
-						<input type="submit" value="Eliminar" class="delete-btn">
-					</div>
-				</form>
+                <div class="extend-note">
+					<h2>Nota de ejemplo</h2>
 				</div>
 
-				<div class="queque-box">
-				<form action="eliminarlistaP.php" method="get">
-					<h2>Eliminar Lista</h2>
-					<div class="placeholder-box eliminar">
-						<input type="text" name="nombreLista"><br>
-						<input type="submit" value="Eliminar" class="delete-btn">
-					</div>
-				</form>
-				</div>
+				<?php foreach($notas as $nota){ ?>
 
-				<?php foreach($listas as $lista){ ?>
-
-				<div class="queque-box">
-					<h2><?php echo htmlspecialchars($lista['nombreLista']); ?></h2>
-					<div class="placeholder-box">
-						<p><?php echo htmlspecialchars($lista['infoLista']); ?></p>
-					</div>
+				<div class="extend-note">
+					<h2><?php echo htmlspecialchars($nota['nota']); ?></h2>
 				</div>
 
 				<?php } ?>
-			</div>
+
 		</div>
 	</div>
 </body>
