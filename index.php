@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<title>ShareCheck</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="main-page">
-	<!--form action="conexion.php" method="post"-->
 		<div class="side-bar">
 			<div class="menu-top-icon">
 				<a href="index.php">
@@ -35,12 +36,6 @@
 						<img class="fit-icon" src="img/settings_icon.png">
 					</a>
 				</div>
-				<!--ul>
-					<li>listas</li>
-					<li>grupos</li>
-					<li>notificaciones</li>
-					<li>ajustes</li>
-				</ul-->
 			</div>
 		</div>
 		<div class="head-bar">
@@ -65,8 +60,8 @@
 					<h2>Crear</h2>
 					<div class="placeholder-box">
 						<h2><a href="crearlista.php">Lista</a></h2>
-						<h2><a href="crearequipo.html">Equipo</a></h2>
-						<h2><a href="crearintegrante.html">Integrante</a></h2>
+						<h2><a href="crearequipo.php">Equipo</a></h2>
+						<h2><a href="crearintegrante.php">Integrante</a></h2>
 					</div>
 				</div>
 				<div class="even-box join-box">
@@ -85,7 +80,6 @@
 				</div>
 			</div>
 		</div>
-	<!--/form-->
 	</div>
 </body>
 </html>

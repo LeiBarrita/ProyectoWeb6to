@@ -1,3 +1,17 @@
+<?php
+	include("conexion.php");
+	$conn =  new mysqli($servidor, $user, $password, $bd);
+	if ($conn->connect_error){
+		die("Error al conectar a la base de datos");
+	}
+
+	$sql = "SELECT nombreLista, infoLista FROM listas ORDER BY nombreLista";
+	$result = mysqli_query($conn, $sql);
+	$listas = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	mysqli_free_result($result);
+	mysqli_close($conn);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
