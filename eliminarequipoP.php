@@ -1,5 +1,5 @@
 <?php
-$nombreLista = $_GET['nombreLista'];
+$nombreEquipo = $_GET['nombreEquipo'];
 include("conexion.php");
 
 $conn =  new mysqli($servidor, $user, $password, $bd);
@@ -8,21 +8,21 @@ if ($conn->connect_error){
     die("Error al conectar a la base de datos");
 }
 
-$consulta = "SELECT * FROM listas";
+$consulta = "SELECT * FROM equipos";
 $cursor = $conn->query($consulta);
 
 $existe = 2;
 
 
 while( $tupla = $cursor->fetch_assoc() ){
-    if ($tupla["nombreLista"] == $nombreLista) {
-        $sql="DELETE FROM listas WHERE nombreLista = '$nombreLista'";
+    if ($tupla["nombreEquipo"] == $nombreEquipo) {
+        $sql="DELETE FROM equipos WHERE nombreEquipo = '$nombreEquipo'";
         $conn->query($sql);
         if( $conn->query($sql)===TRUE ){
-            echo("Lista eliminada con éxito");
+            echo("Equipo eliminado con éxito");
             $existe = 1;
          } else {
-            echo("Error al eliminar lista:".$conn->connect_error); 
+            echo("Error al eliminar euipo:".$conn->connect_error); 
          }
             break;
     } else {
@@ -32,10 +32,10 @@ while( $tupla = $cursor->fetch_assoc() ){
 
 
 if ($existe == 0){
-    echo ("La lista no existe");
+    echo ("El equipo no existe");
 }
 
 $conn->close();
 ?>
 
-<p>Regresar a la página <a href="lists.php"> anterior</a></p>
+<p>Regresar a la página <a href="teams.php"> anterior</a></p>

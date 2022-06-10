@@ -7,7 +7,7 @@ $(document).ready(function(){
         $(this).removeClass("bgcolorpvr");
     });
 
-    $(".delete-btn").click(function(){
-        window.location.href = "index.html";
-    });
+    //$(".delete-btn").click(function(){
+        //window.location.href = "eliminarlistaP.php";
+    //});
 });

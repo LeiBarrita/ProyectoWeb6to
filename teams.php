@@ -18,6 +18,8 @@
 	<meta charset="utf-8">
 	<title>ShareCheck</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="main-page">
@@ -63,7 +65,15 @@
 			</div>
 		</div>
 		<div class="page-content">
-		<div class="wrap-box">
+			<form action="eliminarequipoP.php" method="get">
+			<div class="wrap-box">
+				<div class="queque-box">
+					<h2>Eliminar Equipo</h2>
+					<div class="placeholder-box eliminar">
+						<input type="text" name="nombreEquipo"><br>
+						<input type="submit" value="Eliminar" class="delete-btn">
+					</div>
+				</div>
 				<?php foreach($equipos as $equipo){ ?>
 
 				<div class="queque-box">
@@ -75,6 +85,7 @@
 
 				<?php } ?>
 			</div>
+			</form>
 		</div>
 	</div>
 </body>

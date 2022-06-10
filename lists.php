@@ -65,11 +65,12 @@
 			</div>
 		</div>
 		<div class="page-content">
+			<form action="eliminarlistaP.php" method="get">
 			<div class="wrap-box">
 				<div class="queque-box">
 					<h2>Eliminar Lista</h2>
 					<div class="placeholder-box eliminar">
-						<input type="text"><br>
+						<input type="text" name="nombreLista"><br>
 						<input type="submit" value="Eliminar" class="delete-btn">
 					</div>
 				</div>
@@ -84,6 +85,7 @@
 
 				<?php } ?>
 			</div>
+			</form>
 		</div>
 	</div>
 </body>
