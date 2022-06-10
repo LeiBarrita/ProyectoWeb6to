@@ -185,3 +185,18 @@ input[type="search"]{
 	width: 200px;
 	float: right;
 }
+
+.bgcolor2{
+	background-color: var(--color2);
+}
+.bgcolorpvr{
+	background-color: palevioletred;
+}
+.bgcolorwhite{
+	background-color: white;
+}
+
+.eliminar{
+	display: flex;
+	align-items: center;
+}

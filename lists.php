@@ -18,6 +18,8 @@
 	<meta charset="utf-8">
 	<title>ShareCheck</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="main-page">
@@ -65,8 +67,11 @@
 		<div class="page-content">
 			<div class="wrap-box">
 				<div class="queque-box">
-					<h2>lista ejemplo</h2>
-					<div class="placeholder-box"></div>
+					<h2>Eliminar Lista</h2>
+					<div class="placeholder-box eliminar">
+						<input type="text"><br>
+						<input type="submit" value="Eliminar" class="delete-btn">
+					</div>
 				</div>
 				<?php foreach($listas as $lista){ ?>
 

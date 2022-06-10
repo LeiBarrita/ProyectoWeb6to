@@ -5,9 +5,9 @@
 		die("Error al conectar a la base de datos");
 	}
 
-	$sql = "SELECT nombreLista, infoLista FROM listas ORDER BY nombreLista";
+	$sql = "SELECT nombreEquipo, infoEquipo FROM equipos ORDER BY nombreEquipo";
 	$result = mysqli_query($conn, $sql);
-	$listas = mysqli_fetch_all($result, MYSQLI_ASSOC);
+	$equipos = mysqli_fetch_all($result, MYSQLI_ASSOC);
 	mysqli_free_result($result);
 	mysqli_close($conn);
 ?>
@@ -63,11 +63,17 @@
 			</div>
 		</div>
 		<div class="page-content">
-			<div class="content-row">
-				
-			</div>
-			<div class="content-row">
-				
+		<div class="wrap-box">
+				<?php foreach($equipos as $equipo){ ?>
+
+				<div class="queque-box">
+					<h2><?php echo htmlspecialchars($equipo['nombreEquipo']); ?></h2>
+					<div class="placeholder-box">
+						<p><?php echo htmlspecialchars($equipo['infoEquipo']); ?></p>
+					</div>
+				</div>
+
+				<?php } ?>
 			</div>
 		</div>
 	</div>
