@@ -66,10 +66,6 @@
 		</div>
 		<div class="page-content">
 
-                <div class="extend-note">
-					<h2>Nota de ejemplo</h2>
-				</div>
-
 				<?php foreach($notas as $nota){ ?>
 
 				<div class="extend-note">

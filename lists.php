@@ -68,11 +68,24 @@
 			<div class="wrap-box">
 
 				<div class="queque-box">
+				<form action="crearnotaP.php" method="get">
+					<h2>Crear Nota</h2>
+					<div class="placeholder-box eliminar">
+						<h4>Nombre de la lista:</h4>
+						<input type="text" name="nombreLista"><br>
+						<h4>Nota:</h4>
+						<input type="text" name="nota"><br>
+						<input type="submit" value="Crear" class="delete-btn">
+					</div>
+				</form>
+				</div>
+
+				<div class="queque-box">
 				<form action="abrirlista.php" method="get">
 					<h2>Abrir Lista</h2>
 					<div class="placeholder-box eliminar">
 						<input type="text" name="nombreLista"><br>
-						<input type="submit" value="Eliminar" class="delete-btn">
+						<input type="submit" value="Abrir" class="delete-btn">
 					</div>
 				</form>
 				</div>
