@@ -9,13 +9,12 @@
 <body>
 	<div class="login-box">	
 		<h1>Login</h1>
-		<form action="">
-			<label for="username">Username</label>
-			<input type="text" placeholder="Ingresa tu nombre">
-			<label for="pass">Contrasena</label>
-			<input type="password" placeholder="Ingresa tu contrasena">
-			<input type="submit" value="Log In">
-
+		<form action="conexion.php" method="post">
+			<label for="username">Nombre de la Lista:</label>
+			<input type="text" name="nombreLista">
+			<label for="pass">Descripcion</label>
+			<input type="password" name="infoLista">
+			<input type="submit">
 			<a href="#">Crear cuenta</a>
 		</form>
 	</div>	
